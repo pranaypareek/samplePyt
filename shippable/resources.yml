@@ -1,0 +1,20 @@
+#shippable dir
+resources:
+  - name: apiImage
+    type: image
+    integration: pranay-docker
+    source:
+      name: "shipimg/api"
+      isPull: false
+  - name: wwwImage
+    type: image
+    integration: pranay-docker
+    source:
+      name: "shipimg/www"
+      isPull: true
+  - name: samplePyt
+    type: gitRepo
+    integration: github
+    source:
+      name: "pranaypareek/sample_python"
+      branch: shaData
