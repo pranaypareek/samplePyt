@@ -7,7 +7,8 @@ python:
   - 2.7
 
 env:
-  secure: hKkBYPGx9fvnxbnhDWVwoh4FdPO1iXX/yEMEDna/HTH+fS1eLc/YRmI2RKbFH9zeFJ10DdWx6sAcQdqNZ92h8LThSXJ4EJSn/2dTmBcwtVf+JXkzsVFjACK4NL6CKl38RU0YiYNSeEHqAmQlSxiujb7pfMj7bRbZybf3R6ws65+5wXgaAJEKe3FYDi2cWCnE3qpJXHsP53cJlFjotKyqNvLhNjxXXUEZK/c8y0ENSdiGKhe9GfItWfO6xSgHuIgheOGixp9RkU+zZpRhC5G/CmqbDbYrJ0xdZsY/6MK2kUhz4PC74LmleCnto2EGy8V6sxpfkjkKvbZdWiVxV/7TAg==
+  global:
+    - secure: hKkBYPGx9fvnxbnhDWVwoh4FdPO1iXX/yEMEDna/HTH+fS1eLc/YRmI2RKbFH9zeFJ10DdWx6sAcQdqNZ92h8LThSXJ4EJSn/2dTmBcwtVf+JXkzsVFjACK4NL6CKl38RU0YiYNSeEHqAmQlSxiujb7pfMj7bRbZybf3R6ws65+5wXgaAJEKe3FYDi2cWCnE3qpJXHsP53cJlFjotKyqNvLhNjxXXUEZK/c8y0ENSdiGKhe9GfItWfO6xSgHuIgheOGixp9RkU+zZpRhC5G/CmqbDbYrJ0xdZsY/6MK2kUhz4PC74LmleCnto2EGy8V6sxpfkjkKvbZdWiVxV/7TAg==
 
 build:
   ci:
