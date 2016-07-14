@@ -17,8 +17,3 @@ integrations:
       recipients:
         - "webchat.freenode.net#boroboro"
         - "chat.freenode.net#boroboro"
-      branches:
-        only:
-          - master
-      on_success: always
-      on_failure: always
