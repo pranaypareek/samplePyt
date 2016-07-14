@@ -14,6 +14,10 @@ integrations:
   notifications:
     - integrationName: irc
       type: irc
+      branches:
+        only:
+          - master
+          - irc
       recipients:
         - "webchat.freenode.net#boroboro"
         - "chat.freenode.net#boroboro"
