@@ -9,3 +9,16 @@ python:
 build:
   ci:
     - python --version
+
+integrations:
+  notifications:
+    - integrationName: irc
+      type: irc
+      recipients:
+        - "webchat.freenode.net#boroboro"
+        - "chat.freenode.net#boroboro"
+      branches:
+        only:
+          - master
+      on_success: always
+      on_failure: always
