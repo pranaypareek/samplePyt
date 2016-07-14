@@ -19,5 +19,4 @@ integrations:
           - master
           - irc
       recipients:
-        - "webchat.freenode.net#boroboro"
         - "chat.freenode.net#boroboro"
