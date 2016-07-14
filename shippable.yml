@@ -16,3 +16,4 @@ integrations:
       type: irc
       recipients:
         - "chat.freenode.net#boroboro"
+      on_start: always
