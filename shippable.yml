@@ -1,12 +1,13 @@
 language: python # I dont use any language, python is choosen randomly
 
 build:
-  # pre_ci_boot:
-  #   options: "-v /app:/app"
+  pre_ci_boot:
+    options: "-v /app:/app"
   ci:
     - pip install -U docker-compose
     - docker-compose -f docker-compose.yml up
     - docker-compose -f docker-compose.yml build app
+    - ls -a
     - docker-compose -f docker-compose.yml run app ls -lah /    # it shows directories, including /app
     - docker-compose -f docker-compose.yml run app ls -lah /app # it's empty
 
