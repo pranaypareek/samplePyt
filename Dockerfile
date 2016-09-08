@@ -10,6 +10,5 @@ COPY Gemfile /app/
 RUN bundle install
 
 COPY . /app
-WORKDIR /app
 
 CMD bin/run-app
