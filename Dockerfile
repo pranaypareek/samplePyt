@@ -9,6 +9,6 @@ COPY Gemfile /app/
 
 RUN bundle install
 
-COPY . /app
+COPY /app /app
 
 CMD bin/run-app
