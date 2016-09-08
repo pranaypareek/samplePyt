@@ -1,4 +1,4 @@
-language: python # I dont use any language, python is choosen randomly
+language: python 
 
 build:
   pre_ci_boot:
@@ -6,10 +6,9 @@ build:
   ci:
     - pip install -U docker-compose
     - cp -R . /app
-    #- docker-compose -f docker-compose.yml up
     - docker-compose -f docker-compose.yml build app
-    - docker-compose -f docker-compose.yml run app ls -lah /    # it shows directories, including /app
-    - docker-compose -f docker-compose.yml run app ls -lah /app # it's empty
+    - docker-compose -f docker-compose.yml run app ls -lah /  
+    - docker-compose -f docker-compose.yml run app ls -lah /app 
 
 integrations:
   hub:
