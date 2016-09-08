@@ -7,8 +7,8 @@ RUN gem install bundler
 
 COPY Gemfile /app/
 
-COPY . /app
-
 RUN bundle install
+
+COPY . /app
 
 CMD bin/run-app
