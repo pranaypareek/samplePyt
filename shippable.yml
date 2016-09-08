@@ -5,6 +5,7 @@ build:
     options: "-v /app:/app"
   ci:
     - pip install -U docker-compose
+    - cp -R . /app
     #- docker-compose -f docker-compose.yml up
     - docker-compose -f docker-compose.yml build app
     - docker-compose -f docker-compose.yml run app ls -lah /    # it shows directories, including /app
