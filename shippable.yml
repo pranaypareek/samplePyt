@@ -6,6 +6,7 @@ build:
   ci:
     - pip install -U docker-compose
     - docker-compose -f docker-compose.yml up
+    - ls
     - docker-compose -f docker-compose.yml build app
     - docker-compose -f docker-compose.yml run app ls -lah /    # it shows directories, including /app
     - docker-compose -f docker-compose.yml run app ls -lah /app # it's empty
