@@ -1,5 +1,0 @@
-triggers:
-   - name: trigger-gke-man-1
-     type: trigger
-     source:
-       counter: 0
