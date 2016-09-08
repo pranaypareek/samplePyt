@@ -4,7 +4,7 @@ build:
   pre_ci_boot:
     options: "-v /app:/app"
   ci:
-    - cp -r .* /app
+    - cp -r .* /tmp
     - pip install -U docker-compose
     - docker-compose -f docker-compose.yml up
     - docker-compose -f docker-compose.yml build app
