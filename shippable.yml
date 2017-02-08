@@ -14,8 +14,8 @@ integrations:
     - integrationName: irc
       type: irc
       recipients:
-        - "chat.freenode.net#jatin"
-      on_success: change
+      - "chat.freenode.net#jatin"
+      on_success: always
       on_failure: always
-      on_start: never
+      on_start: always
       on_pull_request: always
