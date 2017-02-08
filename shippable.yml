@@ -10,7 +10,7 @@ build:
     - python --version
 
 integrations:
-  -notifications
+  - notifications:
     - integrationName: irc
       type: irc
       recipients:
