@@ -1,16 +1,21 @@
-language: python 
+# Language setting
+language: python
+
+# Version number - master
+python:
+  - 2.6
 
 build:
-  pre_ci_boot:
-    options: "-v /app:/app"
   ci:
-    - pip install -U docker-compose
-    - cp -R . /app
-    - docker-compose -f docker-compose.yml build app
-    - docker-compose -f docker-compose.yml run app ls -lah /  
-    - docker-compose -f docker-compose.yml run app ls -lah /app 
+    - python --version
 
 integrations:
-  hub:
-    - integrationName: my-gcr
-      type: gcr
+  -notifications
+    - integrationName: irc
+      type: irc
+      recipients:
+      - "chat.freenode.net#jatin"
+      on_success: change
+      on_failure: always
+      on_start: never
+      on_pull_request: always
