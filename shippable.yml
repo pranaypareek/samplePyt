@@ -1,18 +1,21 @@
-
 # Language setting
 language: python
 
-# Version number
+# Version number - master
 python:
   - 2.6
-  - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
-  - 3.5
-  - pypy
-  - pypy3
 
 build:
   ci:
     - python --version
+
+integrations:
+  notifications:
+    - integrationName: irc
+      type: irc
+      recipients:
+      - "chat.freenode.net#jatin"
+      on_success: change
+      on_failure: always
+      on_start: never
+      on_pull_request: always
